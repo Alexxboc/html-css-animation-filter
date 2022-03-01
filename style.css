@@ -1,0 +1,216 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: 2s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+/* /.solution 1 */
+
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s;
+}
+
+.ex-2-square:active {
+    width: 300px;
+    height: 200px;
+}
+
+/* /.solution 2 */
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s;
+}
+
+.ex-3-square:hover {
+    line-height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+
+/* /.solution 3 */
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 5s;
+}
+
+.ex-4-square:hover {
+    background-color: transparent;
+}
+
+/* /.solution 4 */
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: 3s;
+}
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.ex-5-square:active {
+    width: 20px;
+    height: 20px;
+}
+
+/* /.solution 5 */
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-7-img:hover {
+    transition: 3s;
+    filter: blur(10px) drop-shadow(10px 10px 20px black);
+}
+
+.ex-8-img:hover {
+    border-radius: 20px;
+    filter: brightness(0.5) invert(1);
+    transition: 3s;
+}
+
+/* ./ solutions: 6-7-8 */
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: 3s;
+}
+
+.ex-9-img:hover {
+    filter: saturate(50%) sepia(30%);
+    border-radius: 30px;
+    width: 200px;
+}
+
+/* ./solution 9 */
+
+.ex-10-icon {
+    font-size: 60px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+/* ./solution 10 */
+
+.ex-11-icon {
+    font-size: 60px;
+    }
+
+.ex-11-icon:hover {
+    animation-name: spin_2;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes spin_2 {
+    0% {
+        transform:rotate(0deg);
+    }
+    90% {
+        transform:rotate(270deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
+/* ./solution 11 */
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: top_animation 3s linear;
+}
+@keyframes top_animation {
+    0% {
+        left: 15px;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 15px;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom_animation 3s linear;
+}
+@keyframes bottom_animation {
+    0% {
+        right: 15px;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 15px;
+    }
+}
+
+/* ./solution 12 */
+
